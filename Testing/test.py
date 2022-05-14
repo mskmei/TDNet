@@ -69,9 +69,9 @@ def test(args):
             if not os.path.exists(save_dir):
                 os.mkdir(save_dir)
             imageio.imwrite(res_path, decoded.astype(np.uint8))
-            cv2.namedWindow("Image")
-            cv2.imshow("Image", decoded.astype(np.uint8))
-            cv2.waitKey(1)
+#             cv2.namedWindow("Image")
+#             cv2.imshow("Image", decoded.astype(np.uint8))
+#             cv2.waitKey(1)
 
             print(" Frame {0:2d}   RunningTime/Latency={1:3.5f} s".format(i + 1,  elapsed_time))
 
