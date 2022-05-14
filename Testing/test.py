@@ -77,7 +77,7 @@ def test(args):
 
     print("---------------------")
     print(" Model: {0:s}".format(args.model))
-    print(" Average  RunningTime/Latency={0:3.5f} s".format(timer/(i-5)))
+#     print(" Average  RunningTime/Latency={0:3.5f} s".format(timer/(i-5)))
     print("---------------------")
 
 
