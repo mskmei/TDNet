@@ -5,5 +5,4 @@ matplotlib
 torch-encoding
 tqdm
 PyYAML
-cv2
 PIL
