@@ -27,7 +27,7 @@ def test(args):
 
     elif args.model=='td2-psp50':
         path_num = 2
-        vid_seq = cityscapesLoader(img_path=args.img_path,in_size=(769,1537))
+        vid_seq = cityscapesLoader(img_path=args.img_path,in_size=(1080,1920))
         vid_seq.load_frames()
         model = td2_psp50.td2_psp50(nclass=19,path_num=path_num,model_path=args._td2_psp50_path)
 
