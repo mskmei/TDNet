@@ -61,7 +61,7 @@ def test(args):
             pred = np.squeeze(output.data.max(1)[1].cpu().numpy(), axis=0)
 
             pred = pred.astype(np.int8)
-            pred = cv2.resize(pred, (ori_size[0]//4,ori_size[1]//4), interpolation=cv2.INTER_NEAREST)
+            pred = cv2.resize(pred, (ori_size[0],ori_size[1]), interpolation=cv2.INTER_NEAREST)
             decoded = vid_seq.decode_segmap(pred)
 
             save_dir = os.path.join(args.output_path,folder)
